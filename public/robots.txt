@@ -1,0 +1,10 @@
+# Arborpaygo Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://arborpaygo.com/sitemap.xml
+
+# Disallow admin and private pages
+Disallow: /admin/
+Disallow: /private/
