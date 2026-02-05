@@ -1,6 +1,8 @@
 import { ArrowRight, Check, Globe, Lock, Smartphone, TrendingUp } from "lucide-react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const OnlinePayments = () => {
   const features = [
@@ -37,9 +39,26 @@ export const OnlinePayments = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Online Payments - Secure Payment Gateway"
+        description="Accept payments online securely. Easy integration, fraud protection, and fast settlements. Perfect for e-commerce and remote businesses."
+        keywords="online payments, payment gateway, e-commerce payments, secure checkout, payment links"
+        canonical="https://arborpaygo.com/products/online-payments"
+        breadcrumbs={[
+          { name: "Products", url: "/products" },
+          { name: "Online Payments", url: "/products/online-payments" }
+        ]}
+      />
       <Header />
       
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
+        <Breadcrumbs items={[
+          { name: "Products", url: "/products" },
+          { name: "Online Payments", url: "/products/online-payments" }
+        ]} />
+      </div>
+      
+      <section className="pt-8 pb-16 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

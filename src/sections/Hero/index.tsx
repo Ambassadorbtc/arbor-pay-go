@@ -17,7 +17,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 pb-6 sm:pt-24 sm:pb-8 lg:pt-28 lg:pb-10 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-32 pb-6 sm:pt-32 sm:pb-8 lg:pt-40 lg:pb-10 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-stone-50">
         <div className="absolute top-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-teal-400 rounded-full blur-3xl opacity-20 animate-pulse" />

@@ -53,7 +53,7 @@ export const Footer = () => {
                   <li key={link.label}>
                     <button
                       onClick={() => handleNavigation(link.href)}
-                      className="text-gray-400 hover:text-white transition-colors text-sm block text-left w-full py-0.5"
+                      className="text-gray-400 hover:text-white transition-colors text-sm block text-left w-full py-0 leading-tight"
                     >
                       {link.label}
                     </button>

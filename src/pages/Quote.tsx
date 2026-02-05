@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Check, Building2, Users, CreditCard, TrendingUp } from "lucide-react";
 import { Header } from "@/sections/Header";
@@ -96,14 +96,14 @@ export const Quote = () => {
       />
       <Header />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
         <Breadcrumbs items={[
           { name: "Get Quote", url: "/quote" }
         ]} />
       </div>
       
       {/* Hero Section */}
-      <section className="pt-28 pb-4 sm:pt-32 sm:pb-6 bg-gradient-to-br from-teal-50 via-white to-stone-50">
+      <section className="pt-32 pb-4 sm:pt-32 sm:pb-6 bg-gradient-to-br from-teal-50 via-white to-stone-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <div className="inline-block px-4 py-2 bg-teal-100 text-teal-900 text-sm font-bold rounded-full mb-6">
             Get Your Free Quote

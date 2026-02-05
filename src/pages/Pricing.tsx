@@ -7,32 +7,6 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 export const Pricing = () => {
   const plans = [
     {
-      name: "Standard",
-      nameColor: "text-teal-600",
-      price: "£0",
-      period: "/month",
-      processingFee: "0.30%",
-      processingNote: "plus any applicable surcharges",
-      description: "All the core features needed to process payments quickly and reliably.",
-      features: [
-        "£0 monthly fee",
-        "0.30% processing fee",
-        "Free terminal hardware",
-        "Next-day payouts (5 days/week)",
-        "Email support",
-        "Basic reporting",
-        "All major cards accepted",
-        "Contactless payments",
-      ],
-      notIncluded: [
-        "7-day payouts",
-        "Priority support",
-        "Advanced analytics",
-      ],
-      cta: "Get Started",
-      popular: false,
-    },
-    {
       name: "Inclusive",
       nameColor: "text-teal-600",
       price: "£39.99",
@@ -53,6 +27,32 @@ export const Pricing = () => {
       ],
       notIncluded: [
         "Dedicated account manager",
+      ],
+      cta: "Get Started",
+      popular: false,
+    },
+    {
+      name: "Standard",
+      nameColor: "text-teal-600",
+      price: "£15",
+      period: "/month",
+      processingFee: "0.30%",
+      processingNote: "plus any applicable surcharges",
+      description: "All the core features needed to process payments quickly and reliably.",
+      features: [
+        "£15 monthly fee",
+        "0.30% processing fee",
+        "Free terminal hardware",
+        "Next-day payouts (5 days/week)",
+        "Email support",
+        "Basic reporting",
+        "All major cards accepted",
+        "Contactless payments",
+      ],
+      notIncluded: [
+        "7-day payouts",
+        "Priority support",
+        "Advanced analytics",
       ],
       cta: "Get Started",
       popular: true,
@@ -107,7 +107,7 @@ export const Pricing = () => {
       />
       <Header />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
         <Breadcrumbs items={[
           { name: "Pricing", url: "/pricing" }
         ]} />
@@ -277,7 +277,7 @@ export const Pricing = () => {
             ))}
           </div>
 
-          <div className="text-center mt-8 text-sm text-gray-500">
+          <div className="text-center mt-32 text-sm text-gray-500">
             <p>* 0% processing fee applies to the Inclusive Plan only. Standard surcharges may apply for certain card types.</p>
           </div>
         </div>

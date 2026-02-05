@@ -89,7 +89,7 @@ export const Products = () => {
       />
       <Header />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
         <Breadcrumbs items={[
           { name: "Products", url: "/products" }
         ]} />

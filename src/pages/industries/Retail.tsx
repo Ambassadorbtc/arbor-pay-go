@@ -87,7 +87,7 @@ export const Retail = () => {
       />
       <Header />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
         <Breadcrumbs items={[
           { name: "Industries", url: "/industry/services" },
           { name: "Retail", url: "/industry/retail" }

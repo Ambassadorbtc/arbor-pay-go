@@ -1,8 +1,10 @@
-import { ArrowRight, Check, TrendingUp, Clock, Shield, DollarSign } from "lucide-react";
-import { Header } from "@/sections/Header";
-import { Footer } from "@/sections/Footer";
+    import { ArrowRight, Check, TrendingUp, Clock, Shield, DollarSign } from "lucide-react";
+    import { Header } from "@/sections/Header";
+    import { Footer } from "@/sections/Footer";
+    import { SEO } from "@/components/SEO";
+    import { Breadcrumbs } from "@/components/Breadcrumbs";
 
-export const BusinessFunding = () => {
+    export const BusinessFunding = () => {
   const features = [
     {
       icon: DollarSign,
@@ -35,11 +37,28 @@ export const BusinessFunding = () => {
     "Competitive rates",
   ];
 
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
+      return (
+        <div className="min-h-screen bg-white">
+          <SEO
+            title="Business Funding - Fast, Flexible Finance"
+            description="Get business funding from £1,000 to £250,000. Fast approval, flexible repayment terms, no hidden fees. Fuel your business growth."
+            keywords="business funding, merchant cash advance, business loan, sme finance, growth capital"
+            canonical="https://arborpaygo.com/products/business-funding"
+            breadcrumbs={[
+              { name: "Products", url: "/products" },
+              { name: "Business Funding", url: "/products/business-funding" }
+            ]}
+          />
+          <Header />
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
+            <Breadcrumbs items={[
+              { name: "Products", url: "/products" },
+              { name: "Business Funding", url: "/products/business-funding" }
+            ]} />
+          </div>
+
+          <section className="pt-8 pb-16 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

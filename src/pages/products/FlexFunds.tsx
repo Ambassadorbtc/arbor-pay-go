@@ -1,8 +1,10 @@
-import { ArrowRight, Check, Zap, Calendar, TrendingUp, Shield } from "lucide-react";
-import { Header } from "@/sections/Header";
-import { Footer } from "@/sections/Footer";
+    import { ArrowRight, Check, Zap, Calendar, TrendingUp, Shield } from "lucide-react";
+    import { Header } from "@/sections/Header";
+    import { Footer } from "@/sections/Footer";
+    import { SEO } from "@/components/SEO";
+    import { Breadcrumbs } from "@/components/Breadcrumbs";
 
-export const FlexFunds = () => {
+    export const FlexFunds = () => {
   const features = [
     {
       icon: Zap,
@@ -35,11 +37,28 @@ export const FlexFunds = () => {
     "Transparent pricing",
   ];
 
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
+      return (
+        <div className="min-h-screen bg-white">
+          <SEO
+            title="Flex Funds - Flexible Business Credit"
+            description="Access flexible business funding that grows with you. Instant access, repay from card sales, no fixed monthly payments."
+            keywords="flexible business funding, business credit line, revenue based finance, flexible finance"
+            canonical="https://arborpaygo.com/products/flex-funds"
+            breadcrumbs={[
+              { name: "Products", url: "/products" },
+              { name: "Flex Funds", url: "/products/flex-funds" }
+            ]}
+          />
+          <Header />
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
+            <Breadcrumbs items={[
+              { name: "Products", url: "/products" },
+              { name: "Flex Funds", url: "/products/flex-funds" }
+            ]} />
+          </div>
+
+          <section className="pt-8 pb-16 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

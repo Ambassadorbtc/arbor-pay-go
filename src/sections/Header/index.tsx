@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Menu, ChevronDown, CreditCard, Globe, TrendingUp } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { ChevronDown, CreditCard, Globe, TrendingUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 
@@ -104,7 +104,7 @@ export const Header = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-[100px] lg:h-[106px]">
             {/* Logo */}
             <button 
               onClick={() => handleNavigation("/")} 
