@@ -53,9 +53,10 @@ import { BusinessFunding } from "@/pages/products/BusinessFunding";
 import { FlexFunds } from "@/pages/products/FlexFunds";
 import { CapitalOnTap } from "@/pages/products/CapitalOnTap";
 import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
-import { TermsOfService } from "@/pages/TermsOfService";
+    import { TermsOfService } from "@/pages/TermsOfService";
+    import { MarketingCampaign } from "@/pages/MarketingCampaign";
 
-const HomePage = () => {
+    const HomePage = () => {
   useEffect(() => {
     // Set homepage structured data
     const productSchema = {
@@ -151,9 +152,10 @@ export const App = () => {
         <Route path="/products/business-funding" element={<BusinessFunding />} />
         <Route path="/products/flex-funds" element={<FlexFunds />} />
         <Route path="/products/capital-on-tap" element={<CapitalOnTap />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-of-service" element={<TermsOfService />} />
-      </Routes>
-    </Router>
-  );
-};
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/free-website-review" element={<MarketingCampaign />} />
+          </Routes>
+        </Router>
+      );
+    };
