@@ -12,11 +12,8 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   const [productsOpen, setProductsOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
 
-  console.log('__ANIMA_DBG__ MobileMenu render - isOpen:', isOpen);
-
   // Prevent body scroll when menu is open
   useEffect(() => {
-    console.log('__ANIMA_DBG__ MobileMenu useEffect triggered - isOpen:', isOpen);
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -33,11 +30,8 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   };
 
   if (!isOpen) {
-    console.log('__ANIMA_DBG__ MobileMenu not rendering - isOpen is false');
     return null;
   }
-
-  console.log('__ANIMA_DBG__ MobileMenu rendering full menu');
 
   return (
     <div className="fixed inset-0 z-50 lg:hidden">
