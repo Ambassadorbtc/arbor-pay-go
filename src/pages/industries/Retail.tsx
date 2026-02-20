@@ -321,7 +321,7 @@ export const Retail = () => {
             Ready to Transform Your Retail Payments?
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Join 35,000+ retail businesses using Arborpaygo. Get set up in 24 hours with no setup fees and flexible agreements.
+            Join 35,000+ retail businesses using Arborpaygo. Get set up in 24 hours with no contracts or setup fees.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

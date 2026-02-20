@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ChevronDown, CreditCard, Globe, TrendingUp } from "lucide-react";
+import { ChevronDown, CreditCard, Globe, TrendingUp, Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 
@@ -104,7 +104,7 @@ export const Header = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-[100px] lg:h-[106px]">
+          <div className="flex items-center justify-between h-12 lg:h-14">
             {/* Logo */}
             <button 
               onClick={() => handleNavigation("/")} 
@@ -270,24 +270,10 @@ export const Header = () => {
               </button>
               <button
                 onClick={() => setMobileMenuOpen(true)}
-                className="p-2 rounded-lg transition-colors bg-gray-900 hover:bg-gray-800 flex items-center justify-center"
+                className="p-2 rounded-lg transition-colors bg-gray-900 hover:bg-gray-800"
                 aria-label="Open menu"
               >
-                <svg 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2.5" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                  className="text-white"
-                >
-                  <line x1="4" y1="6" x2="20" y2="6"></line>
-                  <line x1="4" y1="12" x2="20" y2="12"></line>
-                  <line x1="4" y1="18" x2="20" y2="18"></line>
-                </svg>
+                <Menu size={24} strokeWidth={2.5} className="text-white" />
               </button>
             </div>
           </div>

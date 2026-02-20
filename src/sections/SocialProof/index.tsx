@@ -1,6 +1,6 @@
 export const SocialProof = () => {
   return (
-    <section className="py-8 sm:py-10 bg-teal-950 text-white relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-teal-950 text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-400 rounded-full blur-3xl" />
@@ -45,8 +45,6 @@ export const SocialProof = () => {
           <p className="text-white/70 mb-6">From 15,000+ verified reviews</p>
           <a
             href="https://uk.trustpilot.com/review/dojo.tech"
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-white text-teal-950 font-bold rounded-full hover:bg-teal-50 transition-all"
           >
             Read Reviews

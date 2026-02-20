@@ -41,9 +41,9 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-8 sm:py-12 bg-white">
+    <section className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-6 sm:mb-8">
+        <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-4">
             Everything You Need to Succeed
           </h2>
@@ -77,7 +77,7 @@ export const Features = () => {
         </div>
 
         {/* CTA */}
-          <div className="text-center mt-6 sm:mt-8">
+        <div className="text-center mt-12 sm:mt-16">
           <a
             href="/quote"
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-teal-600 to-teal-700 rounded-full hover:from-teal-700 hover:to-teal-800 transition-all duration-200 shadow-2xl hover:shadow-teal-500/50 hover:scale-105"

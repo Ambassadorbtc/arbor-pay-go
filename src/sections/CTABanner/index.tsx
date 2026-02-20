@@ -2,7 +2,7 @@ import { ArrowRight, Check } from "lucide-react";
 
 export const CTABanner = () => {
   return (
-    <section className="py-8 sm:py-10 bg-gradient-to-r from-teal-600 to-teal-700 relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-gradient-to-r from-teal-600 to-teal-700 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl" />
@@ -51,14 +51,9 @@ export const CTABanner = () => {
             </a>
           </div>
 
-          <a 
-            href="https://uk.trustpilot.com/review/dojo.tech"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-white/70 mt-6 hover:text-white transition-colors inline-block"
-          >
+          <p className="text-sm text-white/70 mt-6">
             ⭐ Rated 4.8/5 from 15,000+ reviews
-          </a>
+          </p>
         </div>
       </div>
     </section>

@@ -47,13 +47,13 @@ export const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="font-bold text-base sm:text-lg mb-3 text-teal-400">{category}</h3>
-              <ul className="space-y-1">
+              <h3 className="font-bold text-base sm:text-lg mb-2 text-teal-400">{category}</h3>
+              <ul className="space-y-0.5">
                 {links.map((link) => (
                   <li key={link.label}>
                     <button
                       onClick={() => handleNavigation(link.href)}
-                      className="text-gray-400 hover:text-white transition-colors text-sm block text-left w-full py-0 leading-tight"
+                      className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block text-left w-full"
                     >
                       {link.label}
                     </button>

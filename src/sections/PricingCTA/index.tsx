@@ -2,9 +2,9 @@ import { Check, ArrowRight, Gift } from "lucide-react";
 
 export const PricingCTA = () => {
   return (
-    <section className="py-8 sm:py-12 bg-gradient-to-br from-teal-600 to-teal-800">
+    <section className="py-16 sm:py-24 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+        <div className="bg-gradient-to-br from-teal-600 to-teal-800 rounded-3xl shadow-2xl overflow-hidden">
           <div className="p-8 sm:p-12 text-white text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full text-sm font-bold mb-6">
               <Gift className="w-4 h-4" />

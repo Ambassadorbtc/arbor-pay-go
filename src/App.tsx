@@ -1,16 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-
-// Scroll to top component
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import { SEO } from "@/components/SEO";
@@ -124,7 +113,6 @@ import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
 export const App = () => {
   return (
     <Router>
-      <ScrollToTop />
       <CookieConsent />
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -1,6 +1,6 @@
 export const ContractSwitching = () => {
   return (
-    <section className="py-8 sm:py-10 lg:py-12 bg-gradient-to-br from-gray-900 via-teal-950 to-gray-900 relative overflow-hidden">
+    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gray-900 via-teal-950 to-gray-900 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-teal-400 rounded-full blur-3xl" />

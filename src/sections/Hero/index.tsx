@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Play, Check } from "lucide-react";
 
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,7 +17,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-32 pb-6 sm:pt-32 sm:pb-8 lg:pt-40 lg:pb-10 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-28 lg:pb-20 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-stone-50">
         <div className="absolute top-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-teal-400 rounded-full blur-3xl opacity-20 animate-pulse" />
@@ -35,7 +35,7 @@ export const Hero = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
               </span>
               <span className="text-xs sm:text-sm font-bold text-gray-900">
-                UK's Leading Payment Provider
+                UK's #1 Payment Provider
               </span>
             </div>
 
@@ -71,22 +71,24 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2 sm:pt-4">
               <a
                 href="/quote"
-                className="group relative px-6 xl:px-8 py-3 xl:py-4 text-sm xl:text-base font-bold text-white bg-gradient-to-r from-teal-600 to-teal-700 rounded-full hover:from-teal-700 hover:to-teal-800 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 whitespace-nowrap flex items-center justify-center gap-2"
+                className="group relative px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold text-white bg-gradient-to-r from-teal-600 to-teal-700 rounded-full hover:from-teal-700 hover:to-teal-800 transition-all duration-200 shadow-2xl hover:shadow-teal-500/50 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Start Free Trial
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </a>
+              <a
+                href="#video"
+                className="group px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-bold text-gray-900 bg-white border-2 border-gray-900 rounded-full hover:bg-gray-900 hover:text-white transition-all duration-200 shadow-lg flex items-center justify-center gap-2"
+              >
+                <Play className="w-4 h-4 sm:w-5 sm:h-5" />
+                Watch Demo
+              </a>
             </div>
 
             {/* Trust indicator */}
-            <a 
-              href="https://uk.trustpilot.com/review/dojo.tech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs sm:text-sm text-gray-500 pt-2 sm:pt-4 hover:text-teal-700 transition-colors inline-block"
-            >
+            <p className="text-xs sm:text-sm text-gray-500 pt-2 sm:pt-4">
               ⭐ Rated 4.8/5 from 15,000+ reviews on Trustpilot
-            </a>
+            </p>
           </div>
 
           {/* Right image carousel */}

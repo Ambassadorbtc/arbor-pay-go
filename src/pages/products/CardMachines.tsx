@@ -1,8 +1,6 @@
 import { ArrowRight, Check, CreditCard, Zap, Shield } from "lucide-react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
-import { SEO } from "@/components/SEO";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const CardMachines = () => {
   const terminals = [
@@ -46,26 +44,9 @@ export const CardMachines = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO
-        title="Card Machines - Compare Our Payment Terminals"
-        description="Explore our range of card machines. Dojo Go, Pocket, and Wired. Fast, secure, and reliable payment terminals for every business type."
-        keywords="card machines, payment terminals, card readers, Dojo terminals, compare card machines"
-        canonical="https://arborpaygo.com/products/card-machines"
-        breadcrumbs={[
-          { name: "Products", url: "/products" },
-          { name: "Card Machines", url: "/products/card-machines" }
-        ]}
-      />
       <Header />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
-        <Breadcrumbs items={[
-          { name: "Products", url: "/products" },
-          { name: "Card Machines", url: "/products/card-machines" }
-        ]} />
-      </div>
-      
-      <section className="pt-8 pb-16 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
+      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">

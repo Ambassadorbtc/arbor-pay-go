@@ -8,7 +8,7 @@ export const TrustBar = () => {
   ];
 
   return (
-    <section className="py-4 sm:py-6 lg:py-8 bg-white border-y border-gray-100">
+    <section className="py-8 sm:py-12 lg:py-16 bg-white border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-xs sm:text-sm font-bold text-gray-400 mb-6 sm:mb-8 uppercase tracking-wider">
           Trusted by 110,000+ businesses

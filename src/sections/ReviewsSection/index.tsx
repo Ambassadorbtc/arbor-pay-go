@@ -30,9 +30,7 @@ export const ReviewsSection = () => {
           </h2>
 
           <a
-            href="https://uk.trustpilot.com/review/dojo.tech"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://uk.trustpilot.com/review/arborpaygo.com"
             className="inline-flex items-center text-teal-400 font-semibold hover:text-teal-300 transition-colors group"
           >
             Read the reviews
