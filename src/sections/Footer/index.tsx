@@ -22,6 +22,7 @@ export const Footer = () => {
       { label: "About Us", href: "/about" },
       { label: "Contact", href: "/contact" },
       { label: "Pricing", href: "/pricing" },
+      { label: "Free Website Review", href: "/free-website-review" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Service", href: "/terms-of-service" },
     ],

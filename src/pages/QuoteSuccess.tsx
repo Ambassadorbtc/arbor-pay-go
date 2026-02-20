@@ -1,11 +1,30 @@
 import { Check, ArrowRight, Phone, Mail } from "lucide-react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const QuoteSuccess = () => {
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Quote Request Received - Thank You"
+        description="Your quote request has been received. Our team will contact you within 2 hours to discuss your payment solution."
+        keywords="quote received, application submitted, payment terminal quote"
+        canonical="https://arborpaygo.com/quote/success"
+        breadcrumbs={[
+          { name: "Get Quote", url: "/quote" },
+          { name: "Success", url: "/quote/success" }
+        ]}
+      />
       <Header />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
+        <Breadcrumbs items={[
+          { name: "Get Quote", url: "/quote" },
+          { name: "Success", url: "/quote/success" }
+        ]} />
+      </div>
       
       {/* Success Section */}
       <section className="pt-32 pb-20 sm:pt-40 sm:pb-32 bg-gradient-to-br from-teal-50 via-white to-stone-50">

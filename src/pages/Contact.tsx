@@ -29,10 +29,11 @@ export const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Contact Us - 24/7 Support Available"
-        description="Get in touch with Arborpaygo. 24/7 phone & chat support, email support, customer site visits Mon-Sat 9am-10pm. We're here to help."
-        keywords="contact Arborpaygo, payment support, customer service, merchant services contact"
+        title="Contact Us - Free Website Review & 24/7 Support"
+        description="Get your free website review and contact Arborpaygo. 24/7 phone & chat support, email support, customer site visits Mon-Sat 9am-10pm. Free website offer available."
+        keywords="contact Arborpaygo, free website review, payment support, customer service, merchant services contact, free website audit"
         canonical="https://arborpaygo.com/contact"
+        ogType="website"
         breadcrumbs={[
           { name: "Contact", url: "/contact" }
         ]}

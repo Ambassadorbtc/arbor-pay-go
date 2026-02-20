@@ -51,10 +51,15 @@ import React, { useState } from "react";
       return (
         <div className="min-h-screen bg-white">
           <SEO
-            title="Free Website Review & Free Website Offer"
-            description="Get a free comprehensive website review and claim a free website worth £800. Limited time marketing offer."
-            keywords="free website review, free website, website audit, web design offer"
+            title="Free Website Review & Free Website Offer - Worth £800"
+            description="Get a free professional website review and qualify for a free website refresh worth £800. Mobile responsive, SEO optimized, fast loading. Limited time offer for UK businesses."
+            keywords="free website review, free website, website audit, web design offer, free website refresh, mobile responsive website, SEO optimization"
             canonical="https://arborpaygo.com/free-website-review"
+            ogType="website"
+            ogImage="https://c.animaapp.com/mky7fepxnTIlgE/assets/test-split-lrg.png"
+            breadcrumbs={[
+              { name: "Free Website Review", url: "/free-website-review" }
+            ]}
           />
           <Header />
 

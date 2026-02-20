@@ -89,32 +89,94 @@ export const SEO = ({
       script.textContent = JSON.stringify(breadcrumbSchema);
     }
 
-    // Add organization schema
+    // Add organization schema with enhanced data
     const orgSchema = {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "FinancialService",
       "name": "Arborpaygo",
+      "alternateName": "Arbor Pay Go",
       "url": "https://arborpaygo.com",
       "logo": "https://c.animaapp.com/mky7fepxnTIlgE/img/uploaded-asset-1769700689352-0.png",
-      "description": "UK's leading payment provider offering card machines, online payments, and business solutions with zero setup fees.",
+      "image": "https://c.animaapp.com/mky7fepxnTIlgE/assets/test-split-lrg.png",
+      "description": "UK's leading payment provider offering card machines, online payments, and business solutions with zero setup fees. Serving 110,000+ businesses with 24/7 support.",
+      "priceRange": "£0 - £39.99",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "167-169 Great Portland Street, 5th Floor",
         "addressLocality": "London",
+        "addressRegion": "Greater London",
         "postalCode": "W1W 5PF",
         "addressCountry": "GB"
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+44-800-123-4567",
-        "contactType": "customer service",
-        "availableLanguage": "English"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.5187",
+        "longitude": "-0.1419"
       },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+44-800-123-4567",
+          "contactType": "customer service",
+          "availableLanguage": ["English"],
+          "areaServed": "GB",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+44-800-123-4567",
+          "contactType": "sales",
+          "availableLanguage": ["English"],
+          "areaServed": "GB"
+        }
+      ],
       "sameAs": [
         "https://twitter.com/dojo_business_",
         "https://www.facebook.com/Dojotech-101737171450003",
         "https://www.linkedin.com/company/dojo-tech/"
-      ]
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "15000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Payment Terminal Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dojo Go Payment Terminal",
+              "description": "Portable payment terminal with built-in 4G and WiFi"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dojo Pocket Payment Terminal",
+              "description": "Ultra-portable payment terminal for table service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dojo Wired Payment Terminal",
+              "description": "Countertop payment terminal with always-on power"
+            }
+          }
+        ]
+      }
     };
 
     let orgScript = document.querySelector('script[data-schema="organization"]');

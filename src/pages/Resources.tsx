@@ -1,6 +1,8 @@
 import { ArrowRight, BookOpen, Video, FileText, Download } from "lucide-react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import { SEO } from "@/components/SEO";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const Resources = () => {
   const categories = [
@@ -93,7 +95,22 @@ export const Resources = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Resources & Learning Center - Guides, Videos & Case Studies"
+        description="Free payment processing guides, video tutorials, case studies, and downloads. Learn how to optimize your business payments and grow revenue."
+        keywords="payment processing guides, merchant services resources, business payment tutorials, case studies"
+        canonical="https://arborpaygo.com/resources"
+        breadcrumbs={[
+          { name: "Resources", url: "/resources" }
+        ]}
+      />
       <Header />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-32 lg:pt-32">
+        <Breadcrumbs items={[
+          { name: "Resources", url: "/resources" }
+        ]} />
+      </div>
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 bg-gradient-to-br from-teal-50 via-white to-stone-50">
