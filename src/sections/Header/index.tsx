@@ -269,7 +269,12 @@ export const Header = () => {
                 Start Free
               </button>
               <button
-                onClick={() => setMobileMenuOpen(true)}
+                onClick={() => {
+                  console.log('__ANIMA_DBG__ Menu button clicked');
+                  console.log('__ANIMA_DBG__ Current mobileMenuOpen state:', mobileMenuOpen);
+                  setMobileMenuOpen(true);
+                  console.log('__ANIMA_DBG__ setMobileMenuOpen(true) called');
+                }}
                 className="p-2 rounded-lg transition-colors bg-gray-900 hover:bg-gray-800"
                 aria-label="Open menu"
               >
